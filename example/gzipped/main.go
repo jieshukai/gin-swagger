@@ -3,10 +3,10 @@ package main
 import (
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
+	"github.com/jieshukai/gin-swagger"
 	swaggerFiles "github.com/swaggo/files"
-	"github.com/swaggo/gin-swagger"
 
-	_ "github.com/swaggo/gin-swagger/example/basic/docs"
+	_ "github.com/jieshukai/gin-swagger/example/basic/docs"
 )
 
 // @title Swagger Example API

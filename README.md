@@ -2,48 +2,48 @@
 
 gin middleware to automatically generate RESTful API documentation with Swagger 2.0.
 
-[![Build Status](https://github.com/swaggo/gin-swagger/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/features/actions)
+[![Build Status](https://github.com/jieshukai/gin-swagger/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/features/actions)
 [![Codecov branch](https://img.shields.io/codecov/c/github/swaggo/gin-swagger/master.svg)](https://codecov.io/gh/swaggo/gin-swagger)
-[![Go Report Card](https://goreportcard.com/badge/github.com/swaggo/gin-swagger)](https://goreportcard.com/report/github.com/swaggo/gin-swagger)
-[![GoDoc](https://godoc.org/github.com/swaggo/gin-swagger?status.svg)](https://godoc.org/github.com/swaggo/gin-swagger)
-[![Release](https://img.shields.io/github/release/swaggo/gin-swagger.svg?style=flat-square)](https://github.com/swaggo/gin-swagger/releases)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jieshukai/gin-swagger)](https://goreportcard.com/report/github.com/jieshukai/gin-swagger)
+[![GoDoc](https://godoc.org/github.com/jieshukai/gin-swagger?status.svg)](https://godoc.org/github.com/jieshukai/gin-swagger)
+[![Release](https://img.shields.io/github/release/swaggo/gin-swagger.svg?style=flat-square)](https://github.com/jieshukai/gin-swagger/releases)
 
 ## Usage
 
 ### Start using it
 
-1. Add comments to your API source code, [See Declarative Comments Format](https://github.com/swaggo/swag/blob/master/README.md#declarative-comments-format).
-2. Download [Swag](https://github.com/swaggo/swag) for Go by using:
+1. Add comments to your API source code, [See Declarative Comments Format](https://github.com/jieshukai/swag/blob/master/README.md#declarative-comments-format).
+2. Download [Swag](https://github.com/jieshukai/swag) for Go by using:
 
 ```sh
-go get -u github.com/swaggo/swag/cmd/swag
+go get -u github.com/jieshukai/swag/cmd/swag
 ```
 
 Starting in Go 1.17, installing executables with `go get` is deprecated. `go install` may be used instead:
 
 ```sh
-go install github.com/swaggo/swag/cmd/swag@latest
+go install github.com/jieshukai/swag/cmd/swag@latest
 ```
 
-3. Run the [Swag](https://github.com/swaggo/swag) at your Go project root path(for instance `~/root/go-project-name`),
-   [Swag](https://github.com/swaggo/swag) will parse comments and generate required files(`docs` folder and `docs/doc.go`)
+3. Run the [Swag](https://github.com/jieshukai/swag) at your Go project root path(for instance `~/root/go-project-name`),
+   [Swag](https://github.com/jieshukai/swag) will parse comments and generate required files(`docs` folder and `docs/doc.go`)
    at `~/root/go-project-name/docs`.
 
 ```sh
 swag init
 ```
 
-4. Download [gin-swagger](https://github.com/swaggo/gin-swagger) by using:
+4. Download [gin-swagger](https://github.com/jieshukai/gin-swagger) by using:
 
 ```sh
-go get -u github.com/swaggo/gin-swagger
+go get -u github.com/jieshukai/gin-swagger
 go get -u github.com/swaggo/files
 ```
 
 Import following in your code:
 
 ```go
-import "github.com/swaggo/gin-swagger" // gin-swagger middleware
+import "github.com/jieshukai/gin-swagger" // gin-swagger middleware
 import "github.com/swaggo/files" // swagger embed files
 
 ```
@@ -102,7 +102,7 @@ import (
    "github.com/gin-gonic/gin"
    docs "github.com/go-project-name/docs"
    swaggerfiles "github.com/swaggo/files"
-   ginSwagger "github.com/swaggo/gin-swagger"
+   ginSwagger "github.com/jieshukai/gin-swagger"
    "net/http"
 )
 // @BasePath /api/v1
